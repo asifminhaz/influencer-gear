@@ -15,7 +15,7 @@
 #fonts{
     font-size: 50px;
 }
-/* hover  */
+hover 
 #fonts:hover{
     color: crimson;
 
@@ -152,19 +152,29 @@ footer{
 /* responsivnes */
 /* mobile device  */
 
-@media only screen and (max-width 688px){
-}
+@media only screen and (max-width:850px);{
 
+    .first-blogs{
+        width: 100%;
+    }
+    .first-blogs, .container, .section-3rd, .footer-container{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        text-align: center;
+        
+    }
 
 
 }
 /* tablet devices  */
-@media only screen and(min-width:688px) and (max-width:992px){
+@media only screen and(min-width:688px) and (max-width:992px);{
     .first-blogs{
         width: 100%;
+       
     }
     
 .first-blogs, .container, .section-3rd, .footer-container{
     grid-template-columns: repeat(2, 1fr);
+    text-align: center;
     
 }
