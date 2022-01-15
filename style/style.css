@@ -146,12 +146,22 @@ footer{
 /* responsivnes */
 /* mobile device  */
 
+@media only screen and (max-width 688px){
+}
+
+.first-blogs, .container, .section-3rd, .footer-container{
+    grid-template-columns: repeat(1, 1fr);
+   justify-content: flex-start;
+   text-align: center;
+   
+}
 /* talet devices  */
 @media only screen and(min-width:688px) and (max-width:992px){
     .first-blogs{
         width: 100%;
-        
     }
-    .first-blogs, .container, .footer-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
+    
+.first-blogs, .container, .section-3rd, .footer-container{
+    grid-template-columns: repeat(2, 1fr);
+    
+}
